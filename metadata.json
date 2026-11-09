@@ -1,0 +1,6 @@
+{
+  "name": "Claudia Amaral Ferreira - Psicóloga e Neuropsicóloga",
+  "description": "Espaço acolhedor e humanizado de psicoterapia e neuropsicologia clínica. Atendimento presencial e online para ansiedade, depressão, avaliação neuropsicológica e saúde emocional.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
