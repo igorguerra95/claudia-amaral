@@ -1,0 +1,25 @@
+name: Automação Central de Configuração do GitHub Pages
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  configure:
+    name: Configurar Repositórios GitHub Pages
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repositório
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Executar Script Seguro
+        env:
+          PAGES_AUTOMATION_TOKEN: ${{ secrets.PAGES_AUTOMATION_TOKEN }}
+        run: node scripts/setup-github-repo.mjs
